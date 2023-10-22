@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Resume</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <header class="header">
+        <nav class="nav__list">
+          <a href="#projects" class="nav__item">Проекты</a>
+          <a href="#work" class="nav__item">Опыт работы</a>
+          <a href="#education" class="nav__item">Курсы</a>
+          <a href="#contacts" class="nav__item">Контакты</a>
+        </nav>
+      </header>
+
+      <main class="main-block">
+        <section class="about-me">
+          <div class="about-me__greeting">
+            <div class="about-me__photo">
+              <img src="./photo/photo.jpg" alt="photo" />
+            </div>
+
+            <div class="about-me__description">
+              <div class="about-me__title">
+                <h1>Михальченко Сергей</h1>
+                <span>Web-developer</span>
+              </div>
+              <hr />
+
+              <div class="about-me__contacts">
+                <div class="about-me__item">
+                  <p>Город</p>
+                  <p>Москва</p>
+                </div>
+                <div class="about-me__item">
+                  <p>e-mail</p>
+                  <p>
+                    <a target="_blank" href="mailto:smihalchenko@yandex.ru">
+                      smihalchenko@yandex.ru
+                    </a>
+                  </p>
+                </div>
+                <div class="about-me__item">
+                  <p>Телефон</p>
+                  <p>
+                    <a target="_blank" href="tel:+79175755713">
+                      +7 917 575 57 13
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-me__text">
+            <div>
+              <p>Опыт работы с HTML, CSS, JS, React, Git</p>
+              <p>Знание CSS-препроцессоров (SASS, SCSS)</p>
+              <p>Опыт работы с Figma</p>
+              <p>Опыт адаптивной верстки</p>
+            </div>
+
+            <div>
+              <p>Опыт создания HTML-страниц сайта на основе дизайн-макетов</p>
+              <p>Знание кросс-браузерной верстки</p>
+              <p>Опыт работы с CSS-фреймворками</p>
+              <p>Английский (intermediate)</p>
+            </div>
+          </div>
+
+          <div class="socials about-me__socials">
+            <a target="_blank" href="tel:+79175755713"
+              ><img src="./icons/phone.png" alt="phone"
+            /></a>
+            <a target="_blank" href="mailto:smihalchenko@yandex.ru"
+              ><img src="./icons/mail.svg" alt="email"
+            /></a>
+            <a target="_blank" href="https://t.me/Hector_555"
+              ><img src="./icons/telegram.png" alt="telegram"
+            /></a>
+            <a
+              target="_blank"
+              href="https://api.whatsapp.com/send/?phone=79175755713"
+              ><img src="./icons/whats-app.png" alt="whats-up"
+            /></a>
+            <a target="_blank" href="https://github.com/Hector-555/"
+              ><img src="./icons/github.svg" alt="github"
+            /></a>
+            <a
+              target="_blank"
+              href="https://discordapp.com/users/sergeymihalchenko"
+              ><img src="./icons/discord.svg" alt="discord"
+            /></a>
+            <a href="./resume/resume.docx" class="socials-btn">Резюме</a>
+          </div>
+        </section>
+
+        <section id="projects" class="projects">
+          <h2 class="block-title">Проекты</h2>
+          <div class="projects-container">
+            <div class="projects-item">
+              <h3 class="projects-item__title">Sedona</h3>
+              <a
+                class="projects-item__link"
+                target="_blank"
+                href="https://github.com/Hector-555/1983281-sedona-33"
+                ><img src="./icons/github.svg" alt="github"
+              /></a>
+              <div class="projects-item__site">
+                <a
+                  target="_blank"
+                  href="https://hector-555.github.io/cosmetologist_site/"
+                  ><img src="./sites/sedona.jpg" alt="sedona_site"
+                /></a>
+              </div>
+            </div>
+            <div class="projects-item">
+              <h3 class="projects-item__title">Cosmetologist</h3>
+              <a
+                class="projects-item__link"
+                target="_blank"
+                href="https://github.com/Hector-555/cosmetologist_site"
+                ><img src="./icons/github.svg" alt="github"
+              /></a>
+              <div class="projects-item__site">
+                <a
+                  target="_blank"
+                  href="https://hector-555.github.io/cosmetologist_site/"
+                  ><img
+                    src="./sites/cosmetologist.jpg"
+                    alt="cosmetologist_site"
+                /></a>
+              </div>
+            </div>
+            <div class="projects-item">
+              <h3 class="projects-item__title">Ballons</h3>
+              <a
+                class="projects-item__link"
+                target="_blank"
+                href="https://github.com/Hector-555/hector-555.github.io"
+                ><img src="./icons/github.svg" alt="github"
+              /></a>
+              <div class="projects-item__site">
+                <a target="_blank" href="https://hector-555.github.io/"
+                  ><img src="./sites/ballons.jpg" alt="Ballons_site"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="work" class="work">
+          <h2 class="block-title">Опыт работы</h2>
+          <div class="experience-block">
+            <div class="experience__item">
+              <div class="experience__years">2023</div>
+              <span>ООО "Древо Родана"</span>
+              <span>Аналитик</span>
+              <button class="experience__show-btn rotate">
+                <img src="./icons/arrow.svg" alt="click" />
+              </button>
+              <div class="experience__text">
+                <p>
+                  Анализ контрагентов на предмет благонадежности,
+                  платежеспособности, формирование заключения
+                </p>
+                <p>
+                  Составление полного дерева связей между контрагентом и его
+                  аффилированными лицами
+                </p>
+              </div>
+            </div>
+            <div class="experience__item">
+              <div class="experience__years">2014 - 2022</div>
+              <span>РТРС</span>
+              <span>Администратор АИС</span>
+              <button class="experience__show-btn rotate">
+                <img src="./icons/arrow.svg" alt="click" />
+              </button>
+              <div class="experience__text">
+                <p>
+                  Развитие функционала информационной системы: за время работы
+                  внедрено с нуля до ввода в производственную эксплуатацию 6
+                  модулей и 2 подсистемы
+                </p>
+                <p>
+                  Составление концепта по внедрению нового функционала.
+                  Согласование с заинтересованными подразделениями
+                </p>
+                <p>
+                  Составление ТЗ, технической документации, инструкции для
+                  пользователей по работе с внедренным функционалом (со стороны
+                  заказчика)
+                </p>
+                <p>
+                  Взаимодействие с командой разработки: постановка задачи,
+                  контроль за сроками исполнения и полнотой разработанного
+                  функционала
+                </p>
+                <p>
+                  Проводил тестирование логики работы функционала с точки зрения
+                  пользователя
+                </p>
+              </div>
+            </div>
+            <div class="experience__item minimize">
+              <div class="experience__years">2014</div>
+              <span>ООО "Баланс-Информ"</span>
+              <span>Технический писатель</span>
+              <button class="experience__show-btn">
+                <img src="./icons/arrow.svg" alt="click" />
+              </button>
+              <div class="experience__text hide">
+                <p>
+                  Составление технической документации, описывающей функционал
+                  модулей и подсистем информационной системы (со стороны
+                  исполнителя)
+                </p>
+                <p>
+                  Взаимодействие с заказчиком по вопросам расширения функционала
+                  информационной системы
+                </p>
+              </div>
+            </div>
+            <div class="experience__item minimize">
+              <div class="experience__years">2014</div>
+              <span>ООО "Реформа"</span>
+              <span>Менеджер отдела сопровождения</span>
+              <button class="experience__show-btn">
+                <img src="./icons/arrow.svg" alt="click" />
+              </button>
+              <div class="experience__text hide">
+                <p>
+                  Организация конференций и рабочих встреч в сфере
+                  здравоохранения на уровне ТО министерств (региональный
+                  уровень), как очно, так и онлайн
+                </p>
+                <p>
+                  Помощь в оформлении электронной отчетности медицинскими
+                  учреждениями перед сдачей в ТО министерства здравоохранения
+                </p>
+              </div>
+            </div>
+            <div class="experience__item minimize">
+              <div class="experience__years">2012 - 2013</div>
+              <span>ООО "Эко-Закон"</span>
+              <span>Консультант в сфере водопользования</span>
+              <button class="experience__show-btn">
+                <img src="./icons/arrow.svg" alt="click" />
+              </button>
+              <div class="experience__text hide">
+                <p>
+                  Подготовка необходимой документации для оформления права
+                  пользования водными ресурсами
+                </p>
+                <p>
+                  Контроль оформления договоров/решений у уполномоченного органа
+                  с нуля и до результата
+                </p>
+                <p>
+                  Гарантия получения допуска к аукциону по приобретению права
+                  пользования водными ресурсами
+                </p>
+              </div>
+            </div>
+            <div class="experience__item minimize">
+              <div class="experience__years">2009 - 2011</div>
+              <span>Московско-Окское БВУ</span>
+              <span>Главный специалист</span>
+              <button class="experience__show-btn">
+                <img src="./icons/arrow.svg" alt="click" />
+              </button>
+              <div class="experience__text hide">
+                <p>
+                  Организация и проведение аукционов по приобретению прав
+                  пользования водными ресурсами. Проведено порядка 80 аукционов
+                </p>
+                <p>
+                  Взаимодействие с бухгалтерией в части исполнения финансовых
+                  обязательств по договорам водопользования, устранение
+                  разночтений
+                </p>
+                <p>
+                  Подготовка отчетности, ответов на запросы и презентаций, как
+                  внутри организации, так и для вешестоящих инстанций (ФАВР,
+                  МПР) - от еженедельной до ежегодной
+                </p>
+              </div>
+            </div>
+            <div class="experience__item minimize">
+              <div class="experience__years">2009</div>
+              <span>ООО «Морган энд Стаут»</span>
+              <span>Менеджер долгового контроля</span>
+              <button class="experience__show-btn">
+                <img src="./icons/arrow.svg" alt="click" />
+              </button>
+              <div class="experience__text hide">
+                <p>
+                  Проводил взыскание с должников (soft-collection) (успешно
+                  закрыто около 150 дел)
+                </p>
+                <p>Опыт разрешения конфликтных ситуаций в пользу клиента</p>
+              </div>
+            </div>
+            <div class="experience__item minimize">
+              <div class="experience__years">2008 - 2009</div>
+              <span>ООО «Гранд Проект»</span>
+              <span>Менеджер договорного отдела</span>
+              <button class="experience__show-btn">
+                <img src="./icons/arrow.svg" alt="click" />
+              </button>
+              <div class="experience__text hide">
+                <p>
+                  Контроль над субподрядчиками по исполнению ими договорных
+                  обязательств
+                </p>
+                <p>
+                  Контроль сроков взаиморасчетов и обязательств по договорам,
+                  сверка платежей с бухгалтерией
+                </p>
+                <p>
+                  Привел в порядок договорную базу по мелким субподрядчикам
+                  (около 40)
+                </p>
+              </div>
+            </div>
+            <div class="experience__item minimize">
+              <div class="experience__years">2008 - 2009</div>
+              <span>ООО «Инвест-Лидер»</span>
+              <span>Финансовый менеджер</span>
+              <button class="experience__show-btn">
+                <img src="./icons/arrow.svg" alt="click" />
+              </button>
+              <div class="experience__text hide">
+                <p>
+                  Взаимодействие с банками-контрагентами в части получения и
+                  орслуживания кредитов
+                </p>
+                <p>
+                  Подготовка необходимой документации для финансового
+                  мониторинга банками-контрагентами (4 банка)
+                </p>
+                <p>
+                  Провел необходимые мероприятия для успешного оформления
+                  кредита на сумму 80 млн.
+                </p>
+              </div>
+            </div>
+            <div class="experience__item minimize">
+              <div class="experience__years">2007</div>
+              <span>Home Credit</span>
+              <span>Специалист по работе с задолженностью</span>
+              <button class="experience__show-btn">
+                <img src="./icons/arrow.svg" alt="click" />
+              </button>
+              <div class="experience__text hide">
+                <p>
+                  Проводил взыскание с должников в сегменте потребительского
+                  кредитования (soft-collection)
+                </p>
+                <p>
+                  Четырежды входил в 10 лучших взыскателей по итогам месяца,
+                  среднее взыскание - 500 – 600 тыс. в месяц
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="education" class="education">
+          <h2 class="block-title">Образование и курсы</h2>
+          <div class="experience-block">
+            <div class="experience__item">
+              <div class="experience__years">2023</div>
+              <span>MathHub</span>
+              <button class="experience__show-btn rotate">
+                <img src="./icons/arrow.svg" alt="click" />
+              </button>
+              <div class="experience__text">
+                <p>Прошел обучение по курсу "Основы JavaScript"</p>
+                <p>
+                  Прошел обучение по курсу "Профессия "Frontend-разработчик"
+                </p>
+              </div>
+            </div>
+            <div class="experience__item">
+              <div class="experience__years">2022 - 2023</div>
+              <span>Stepik</span>
+              <button class="experience__show-btn rotate">
+                <img src="./icons/arrow.svg" alt="click" />
+              </button>
+              <div class="experience__text">
+                <p>
+                  Прошел обучение по курсу "Верстка и веб-разработка сайтов"
+                </p>
+                <p>Прошел обучение по курсу JavaScript</p>
+              </div>
+            </div>
+            <div class="experience__item">
+              <div class="experience__years">2022</div>
+              <span>HTML Academy</span>
+              <button class="experience__show-btn rotate">
+                <img src="./icons/arrow.svg" alt="click" />
+              </button>
+              <div class="experience__text">
+                <p>
+                  Прошел обучение по курсу "HTML и CSS. Профессиональная вёрстка
+                  сайтов"
+                </p>
+              </div>
+            </div>
+            <div class="experience__item minimize">
+              <div class="experience__years">2002 - 2007</div>
+              <span>Московский психолого-социальный университет</span>
+              <button class="experience__show-btn">
+                <img src="./icons/arrow.svg" alt="click" />
+              </button>
+              <div class="experience__text hide">
+                Высшее образование. Специальность - Финансовый менеджмент
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer id="contacts" class="footer">
+        <div class="socials socials-footer">
+          <a target="_blank" href="tel:+79175755713"
+            ><img src="./icons/phone.png" alt="phone"
+          /></a>
+          <a target="_blank" href="mailto:smihalchenko@yandex.ru"
+            ><img src="./icons/mail.svg" alt="email"
+          /></a>
+          <a target="_blank" href="https://t.me/Hector_555"
+            ><img src="./icons/telegram.png" alt="telegram"
+          /></a>
+          <a
+            target="_blank"
+            href="https://api.whatsapp.com/send/?phone=79175755713"
+            ><img src="./icons/whats-app.png" alt="whats-up"
+          /></a>
+          <a target="_blank" href="https://github.com/Hector-555/"
+            ><img src="./icons/github.svg" alt="github"
+          /></a>
+          <a
+            target="_blank"
+            href="https://discordapp.com/users/sergeymihalchenko"
+            ><img src="./icons/discord.svg" alt="discord"
+          /></a>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>

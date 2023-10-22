@@ -1,0 +1,51 @@
+.socials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.socials img {
+    width: 5rem;
+    height: 5rem;
+    cursor: pointer;
+}
+
+.socials img:hover {
+    transform: scale(1.1);
+}
+
+.socials img:active {
+    transform: scale(1.05);
+}
+
+.socials-btn {
+    width: 13rem;
+    text-align: center;
+    text-decoration: none;
+    padding: 1rem 0;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    background-color: #0bb57b;
+    color: #fff;
+    border: none;
+    border-radius: 0.8rem;
+    box-shadow: 0 0.4rem 0.4rem #000;
+}
+
+.socials-btn:hover {
+    background-color: teal;
+    transition: all .5s;
+}
+
+.socials-btn:active {
+    color: red;
+    transform: translateY(0.2rem);
+}
+
+
+@media (max-width: 380px) {
+    .socials img {
+        width: 4rem;
+        height: 4rem;
+    }
+}

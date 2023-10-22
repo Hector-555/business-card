@@ -1,0 +1,41 @@
+.header {
+    min-height: 5rem;
+    padding: 1.5rem 5rem;
+}
+
+.nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.nav__item {
+    text-decoration: none;
+    font-size: 3rem;
+    padding: 0.5rem;
+    color: #fff;
+}
+
+.nav__item:hover {
+    color: teal;
+    transition: all .5s;
+}
+
+.nav__item:active {
+    color: #ff0000;
+    transform: translateY(0.2rem);
+}
+
+
+@media (max-width: 675px) {
+    .nav__item {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 510px) {
+    .nav__list {
+        gap: 0.5rem;
+    }
+}

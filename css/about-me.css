@@ -1,0 +1,204 @@
+.about-me {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding-bottom: 2rem;
+    margin-bottom: 4rem;
+    background-color: #fff;
+}
+
+.about-me__greeting {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 2rem;
+}
+
+.about-me__photo {
+    width: 36%;
+}
+
+.about-me__photo img {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 50%;
+    animation-name: photo;
+    animation-duration: 1.25s;
+    animation-timing-function: ease;
+    box-shadow: 0.4rem 0.4rem 2rem 0.4rem #000;
+}
+
+.about-me__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 3rem;
+    animation-name: contacts;
+    animation-duration: 1.25s;
+    animation-timing-function: ease;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+.about-me__description span {
+    display: block;
+    font-style: italic;
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+}
+
+.about-me__text {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    font-size: 2.5rem;
+    text-align: justify;
+    animation-name: text;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+}
+
+.about-me__text div {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 0.5rem;
+    border-radius: 1rem;
+    font-style: italic;
+    box-shadow: 0.4rem 0.4rem 0.4rem 0.4rem #000;
+    padding: 1rem 1.5rem;
+}
+
+.about-me__text p::before {
+    content: '- ';
+}
+
+.about-me__contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.about-me__item {
+    display: grid;
+    grid-template-columns: 15rem 1fr;
+}
+
+.about-me__item a {
+    text-decoration: none;
+    color: #000;
+}
+
+.about-me__item a:hover {
+    color: #0bb57b;
+}
+
+.about-me__socials {
+    justify-content: center;
+    animation-name: text;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+}
+
+
+
+@media (max-width: 1000px) {
+    .about-me__text {
+        gap: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-me__text {
+        font-size: 2rem;
+    }
+
+    .about-me__description {
+        font-size: 2.3rem;
+    }
+}
+
+@media (max-width: 675px) {
+    .about-me__description {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .about-me__greeting {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .about-me__description {
+        margin: 0 auto;
+        font-size: 2.5rem;
+        gap: 1rem;
+    }
+
+    .about-me__photo {
+        margin: 0 auto;
+    }
+
+    .about-me__title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .about-me__text {
+        flex-direction: column;
+    }
+
+    .about-me__text div {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .about-me__contacts {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 510px) {
+    .about-me__item {
+        grid-template-columns: 12rem 1fr;
+    }
+}
+
+@media (max-width: 450px) {
+    .about-me__contacts {
+        font-size: 2rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 385px) {
+    .about-me {
+        gap: 3rem;
+    }
+
+    .about-me__contacts {
+        font-size: 1.7rem;
+    }
+
+    .about-me__item {
+        grid-template-columns: 9rem 1fr;
+    }
+}
+
+@media (max-width: 330px) {
+    h1 {
+        font-size: 2.7rem;
+    }
+}

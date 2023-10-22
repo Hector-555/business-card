@@ -1,0 +1,103 @@
+.experience-block {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.experience__item {
+    background-color: #fff;
+    padding: 1.5rem;
+    box-shadow: 0.4rem 0.4rem 0.4rem #000;
+    border-radius: 0.8rem;
+    position: relative;
+}
+
+.minimize {
+    height: 14rem;
+}
+
+.experience__item span {
+    display: block;
+    font-style: italic;
+    font-size: 2rem;
+    color: #0bb57b;
+}
+
+.experience__show-btn {
+    width: 3.5rem;
+    height: 3.5rem;
+    position: absolute;
+    top: 2.5rem;
+    right: 4rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    rotate: 180deg;
+    transition: all .5s;
+}
+
+.rotate {
+    rotate: 0deg;
+    transition: all .5s;
+}
+
+.experience__show-btn:hover {
+    transform: scale(1.1);
+}
+
+.experience__show-btn img {
+    width: 100%;
+}
+
+.experience__years {
+    background-color: #0bb57b;
+    color: #fff;
+    width: 15rem;
+    height: 5rem;
+    text-align: center;
+    line-height: 5rem;
+    box-shadow: 0 0.4rem 0.4rem #000;
+    margin-bottom: 1.5rem;
+    border-radius: 0.8rem;
+}
+
+.experience__text {
+    margin-top: 1.5rem;
+    text-align: justify;
+}
+
+.hide {
+    transition: all .5s;
+    display: none;
+}
+
+.experience__text p:not(:last-child) {
+    margin-bottom: 0.7rem;
+}
+
+.experience__text p::before {
+    content: '- ';
+}
+
+
+@media (max-width: 780px) {
+    .minimize {
+        height: 15.5rem;
+    }
+}
+
+@media (max-width: 675px) {
+    .experience-block {
+        grid-template-columns: 1fr;
+    }
+
+    .minimize {
+        height: 14rem;
+    }
+}
+
+@media (max-width: 430px) {
+    .minimize {
+        height: 15.5rem;
+    }
+}
